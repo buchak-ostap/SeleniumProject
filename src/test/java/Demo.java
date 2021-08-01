@@ -22,6 +22,7 @@ public class Demo {
 //        Thread.sleep(2000);
 //
 //        driver.findElement(By.id("search_input")).sendKeys("Ostap");
+        //TODO check git connection
 
         driver.quit();
     }
