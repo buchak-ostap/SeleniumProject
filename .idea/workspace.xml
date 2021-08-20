@@ -1,15 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="10977976-9596-4b93-b931-7e411c840fe7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Drivers/chromedriver" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Drivers/geckodriver" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/seleniumProject/pageObjects/LoginPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/seleniumProject/testCases/BaseClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/seleniumProject/testCases/TC_LoginTest_001.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Demo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Demo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyJavaProject.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/seleniumProject/pageObjects/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/seleniumProject/pageObjects/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/META-INF/MyJavaProject.kotlin_module" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +39,6 @@
     </option>
     <option name="importingSettings">
       <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
         <option name="vmOptionsForImporter" value="-Xmx768m" />
       </MavenImportingSettings>
     </option>
@@ -45,7 +49,6 @@
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -67,7 +70,7 @@
       <recent name="$PROJECT_DIR$/Drivers" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Demo">
+  <component name="RunManager" selected="TestNG.TC_LoginTest_001.loginTest">
     <configuration name="Demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Demo" />
       <module name="MyJavaProject" />
@@ -82,8 +85,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TC_LoginTest_001.loginTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="MyJavaProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.seleniumProject.testCases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.seleniumProject.testCases" />
+      <option name="MAIN_CLASS_NAME" value="com.seleniumProject.testCases.TC_LoginTest_001" />
+      <option name="METHOD_NAME" value="loginTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.TC_LoginTest_001.loginTest" />
         <item itemvalue="Application.Demo" />
         <item itemvalue="Application.Main" />
       </list>
@@ -101,6 +123,7 @@
       </list>
     </option>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -125,100 +148,12 @@
       <workItem from="1628522430398" duration="277000" />
       <workItem from="1628843313826" duration="183000" />
       <workItem from="1629310570443" duration="2780000" />
+      <workItem from="1629404177260" duration="3534000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="2000" y="202" key="#Notifications" timestamp="1628522282242">
-      <screen x="1440" y="0" width="1920" height="1080" />
-    </state>
-    <state x="2000" y="202" key="#Notifications/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1628522282242" />
-    <state x="234" y="379" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1629315798904">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="234" y="379" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1440.900@0.0.1440.900" timestamp="1629315798904" />
-    <state x="491" y="334" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1629315803471">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="491" y="334" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1440.900@0.0.1440.900" timestamp="1629315803471" />
-    <state width="1398" height="244" key="GridCell.Tab.0.bottom" timestamp="1629400913673">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1398" height="244" key="GridCell.Tab.0.bottom/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1629400913673" />
-    <state width="1878" height="458" key="GridCell.Tab.0.bottom/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1628504227161" />
-    <state width="1878" height="319" key="GridCell.Tab.0.bottom/0.25.1440.790/1440.0.1920.1080@1440.0.1920.1080" timestamp="1628019328576" />
-    <state width="1878" height="319" key="GridCell.Tab.0.bottom/0.25.1440.790/1440.25.1920.1055@0.25.1440.790" timestamp="1628498527515" />
-    <state width="1398" height="244" key="GridCell.Tab.0.center" timestamp="1629400913670">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1398" height="244" key="GridCell.Tab.0.center/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1629400913670" />
-    <state width="1878" height="458" key="GridCell.Tab.0.center/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1628504227157" />
-    <state width="1878" height="319" key="GridCell.Tab.0.center/0.25.1440.790/1440.0.1920.1080@1440.0.1920.1080" timestamp="1628019328574" />
-    <state width="1878" height="319" key="GridCell.Tab.0.center/0.25.1440.790/1440.25.1920.1055@0.25.1440.790" timestamp="1628498527514" />
-    <state width="1398" height="244" key="GridCell.Tab.0.left" timestamp="1629400913669">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1398" height="244" key="GridCell.Tab.0.left/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1629400913669" />
-    <state width="1878" height="458" key="GridCell.Tab.0.left/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1628504227156" />
-    <state width="1878" height="319" key="GridCell.Tab.0.left/0.25.1440.790/1440.0.1920.1080@1440.0.1920.1080" timestamp="1628019328570" />
-    <state width="1878" height="319" key="GridCell.Tab.0.left/0.25.1440.790/1440.25.1920.1055@0.25.1440.790" timestamp="1628498527514" />
-    <state width="1398" height="244" key="GridCell.Tab.0.right" timestamp="1629400913671">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1398" height="244" key="GridCell.Tab.0.right/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1629400913671" />
-    <state width="1878" height="458" key="GridCell.Tab.0.right/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1628504227158" />
-    <state width="1878" height="319" key="GridCell.Tab.0.right/0.25.1440.790/1440.0.1920.1080@1440.0.1920.1080" timestamp="1628019328575" />
-    <state width="1878" height="319" key="GridCell.Tab.0.right/0.25.1440.790/1440.25.1920.1055@0.25.1440.790" timestamp="1628498527515" />
-    <state width="1878" height="458" key="GridCell.Tab.1.bottom" timestamp="1628504227164">
-      <screen x="1440" y="0" width="1920" height="1080" />
-    </state>
-    <state width="1398" height="319" key="GridCell.Tab.1.bottom/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1628184638574" />
-    <state width="1878" height="458" key="GridCell.Tab.1.bottom/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1628504227164" />
-    <state width="1878" height="173" key="GridCell.Tab.1.bottom/0.25.1440.790/1440.0.1920.1080@1440.0.1920.1080" timestamp="1628019313103" />
-    <state width="1878" height="319" key="GridCell.Tab.1.bottom/0.25.1440.790/1440.25.1920.1055@0.25.1440.790" timestamp="1628498527516" />
-    <state width="1878" height="458" key="GridCell.Tab.1.bottom/0.25.1440.875/1440.25.1920.970@1440.25.1920.970" timestamp="1628502945789" />
-    <state width="1878" height="458" key="GridCell.Tab.1.center" timestamp="1628504227162">
-      <screen x="1440" y="0" width="1920" height="1080" />
-    </state>
-    <state width="1398" height="319" key="GridCell.Tab.1.center/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1628184638572" />
-    <state width="1878" height="458" key="GridCell.Tab.1.center/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1628504227162" />
-    <state width="1878" height="173" key="GridCell.Tab.1.center/0.25.1440.790/1440.0.1920.1080@1440.0.1920.1080" timestamp="1628019313102" />
-    <state width="1878" height="319" key="GridCell.Tab.1.center/0.25.1440.790/1440.25.1920.1055@0.25.1440.790" timestamp="1628498527515" />
-    <state width="1878" height="458" key="GridCell.Tab.1.center/0.25.1440.875/1440.25.1920.970@1440.25.1920.970" timestamp="1628502945787" />
-    <state width="1878" height="458" key="GridCell.Tab.1.left" timestamp="1628504227161">
-      <screen x="1440" y="0" width="1920" height="1080" />
-    </state>
-    <state width="1398" height="319" key="GridCell.Tab.1.left/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1628184638569" />
-    <state width="1878" height="458" key="GridCell.Tab.1.left/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1628504227161" />
-    <state width="1878" height="173" key="GridCell.Tab.1.left/0.25.1440.790/1440.0.1920.1080@1440.0.1920.1080" timestamp="1628019313101" />
-    <state width="1878" height="319" key="GridCell.Tab.1.left/0.25.1440.790/1440.25.1920.1055@0.25.1440.790" timestamp="1628498527515" />
-    <state width="1878" height="458" key="GridCell.Tab.1.left/0.25.1440.875/1440.25.1920.970@1440.25.1920.970" timestamp="1628502945786" />
-    <state width="1878" height="458" key="GridCell.Tab.1.right" timestamp="1628504227164">
-      <screen x="1440" y="0" width="1920" height="1080" />
-    </state>
-    <state width="1398" height="319" key="GridCell.Tab.1.right/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1628184638573" />
-    <state width="1878" height="458" key="GridCell.Tab.1.right/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1628504227164" />
-    <state width="1878" height="173" key="GridCell.Tab.1.right/0.25.1440.790/1440.0.1920.1080@1440.0.1920.1080" timestamp="1628019313103" />
-    <state width="1878" height="319" key="GridCell.Tab.1.right/0.25.1440.790/1440.25.1920.1055@0.25.1440.790" timestamp="1628498527516" />
-    <state width="1878" height="458" key="GridCell.Tab.1.right/0.25.1440.875/1440.25.1920.970@1440.25.1920.970" timestamp="1628502945788" />
-    <state x="1888" y="118" key="SettingsEditor" timestamp="1628503748576">
-      <screen x="1440" y="0" width="1920" height="1080" />
-    </state>
-    <state x="1888" y="118" key="SettingsEditor/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1628503748576" />
-    <state x="397" y="287" key="com.intellij.ide.util.TipDialog" timestamp="1629310570269">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="1969" y="344" key="com.intellij.ide.util.TipDialog/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1628522659307" />
-    <state x="397" y="287" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1629310570268" />
-    <state x="397" y="277" key="com.intellij.ide.util.TipDialog/0.25.1440.790/1440.25.1920.1055@0.25.1440.790" timestamp="1628843374498" />
-    <state x="1969" y="352" key="com.intellij.ide.util.TipDialog/0.25.1440.790/1440.25.1920.1055@1440.25.1920.1055" timestamp="1627818870997" />
-    <state x="1787" y="234" key="new project wizard" timestamp="1628503904964">
-      <screen x="1440" y="0" width="1920" height="1080" />
-    </state>
-    <state x="1787" y="234" key="new project wizard/0.0.1440.900/1440.0.1920.1080@1440.0.1920.1080" timestamp="1628503904964" />
+    <option name="version" value="3" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -247,6 +182,26 @@
           <url>file://$PROJECT_DIR$/src/test/java/Demo.java</url>
           <line>17</line>
           <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/seleniumProject/testCases/TC_LoginTest_001.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/seleniumProject/testCases/TC_LoginTest_001.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/seleniumProject/testCases/TC_LoginTest_001.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/seleniumProject/testCases/TC_LoginTest_001.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

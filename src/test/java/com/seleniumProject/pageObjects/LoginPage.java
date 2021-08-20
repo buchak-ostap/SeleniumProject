@@ -10,7 +10,7 @@ public class LoginPage {
 
     WebDriver ldriver;
 
-    LoginPage(WebDriver rdriver) {
+    public LoginPage(WebDriver rdriver) {
         ldriver = rdriver;
         PageFactory.initElements(rdriver, this);
     }
@@ -28,7 +28,7 @@ public class LoginPage {
     WebElement loginBtn;
 
     public void setEmail(String userEmail) {
-        password.sendKeys(userEmail);
+        email.sendKeys(userEmail);
     }
 
     public void setPassword(String userPass) {
