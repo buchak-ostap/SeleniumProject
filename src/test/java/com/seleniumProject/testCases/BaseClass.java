@@ -1,22 +1,39 @@
 package com.seleniumProject.testCases;
 
-
+import com.seleniumProject.utilities.ReadConfig;
+import org.apache.log4j.Logger;
+import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Parameters;
 
 public class BaseClass {
 
-    public String baseURL = "https://space.sombrainc.com/";
-    public String email = "ostap.buchak@sombrainc.com";
-    public String password = "S1@R9t!cc";
-    public static WebDriver driver;
+    ReadConfig readConfig = new ReadConfig();
 
+    public String baseURL = readConfig.getGuruUrl();
+    public String email = readConfig.getGuruEmail();
+    public String password = readConfig.getGuruPassword();
+    public static WebDriver driver;
+    public static Logger logger;
+
+    @Parameters("browser")
     @BeforeClass
-    public void setup() {
-        System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "//Drivers//chromedriver");
-        driver = new ChromeDriver();
+    public void setup(String browser) {
+        logger = Logger.getLogger("SS");
+        PropertyConfigurator.configure("Log4j.properties");
+
+        if (browser.equals("chrome")) {
+            System.setProperty("webdriver.chrome.driver", readConfig.getChromePath());
+            driver = new ChromeDriver();
+        } else if (browser.equals("firefox")) {
+            System.setProperty("webdriver.gecko.driver", readConfig.getFirefoxPath());
+            driver = new FirefoxDriver();
+        }
+        driver.get(baseURL);
     }
 
     @AfterClass

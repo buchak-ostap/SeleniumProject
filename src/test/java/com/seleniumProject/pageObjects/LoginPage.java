@@ -15,15 +15,18 @@ public class LoginPage {
         PageFactory.initElements(rdriver, this);
     }
 
-    @FindBy(id = "email")
+//    @FindBy(id = "email")
+    @FindBy(name = "uid")
     @CacheLookup
     WebElement email;
 
-    @FindBy(id = "password")
+//    @FindBy(id = "password")
+    @FindBy(name = "password")
     @CacheLookup
     WebElement password;
 
-    @FindBy(xpath = "//*[text()='login']")
+//    @FindBy(xpath = "//*[text()='login']")
+    @FindBy(name = "btnLogin")
     @CacheLookup
     WebElement loginBtn;
 
