@@ -15,20 +15,25 @@ public class LoginPage {
         PageFactory.initElements(rdriver, this);
     }
 
-//    @FindBy(id = "email")
-    @FindBy(name = "uid")
+    @FindBy(id = "email")
     @CacheLookup
     WebElement email;
 
-//    @FindBy(id = "password")
-    @FindBy(name = "password")
+    @FindBy(id = "password")
     @CacheLookup
     WebElement password;
 
-//    @FindBy(xpath = "//*[text()='login']")
-    @FindBy(name = "btnLogin")
+    @FindBy(xpath = "//*[text()='login']")
     @CacheLookup
     WebElement loginBtn;
+
+    @FindBy(className = "profile-avatar")
+    @CacheLookup
+    WebElement profileIcon;
+
+    @FindBy(xpath = "//*[@class='n-u-m__menu']/md-menu-item[3]")
+    @CacheLookup
+    WebElement logoutBtn;
 
     public void setEmail(String userEmail) {
         email.sendKeys(userEmail);
@@ -40,5 +45,13 @@ public class LoginPage {
 
     public void clickLogin() {
         loginBtn.click();
+    }
+
+    public void clickProfileAvatar() {
+        profileIcon.click();
+    }
+
+    public void clickLogout() {
+        logoutBtn.click();
     }
 }
