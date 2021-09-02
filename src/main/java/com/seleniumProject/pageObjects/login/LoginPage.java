@@ -1,39 +1,26 @@
-package com.seleniumProject.pageObjects;
+package com.seleniumProject.pageObjects.login;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class LoginPage {
 
-    WebDriver ldriver;
-
-    public LoginPage(WebDriver rdriver) {
-        ldriver = rdriver;
-        PageFactory.initElements(rdriver, this);
+    public LoginPage(WebDriver driver) {
+        PageFactory.initElements(driver, this);
     }
 
     @FindBy(id = "email")
-    @CacheLookup
-    WebElement email;
-
+    private WebElement email;
     @FindBy(id = "password")
-    @CacheLookup
-    WebElement password;
-
+    private WebElement password;
     @FindBy(xpath = "//*[text()='login']")
-    @CacheLookup
-    WebElement loginBtn;
-
+    private WebElement loginBtn;
     @FindBy(className = "profile-avatar")
-    @CacheLookup
-    WebElement profileIcon;
-
+    private WebElement profileIcon;
     @FindBy(xpath = "//*[@class='n-u-m__menu']/md-menu-item[3]")
-    @CacheLookup
-    WebElement logoutBtn;
+    private WebElement logoutBtn;
 
     public void setEmail(String userEmail) {
         email.sendKeys(userEmail);

@@ -1,6 +1,7 @@
 package com.seleniumProject.testCases;
 
-import com.seleniumProject.pageObjects.LoginPage;
+import com.seleniumProject.pageObjects.BaseTest;
+import com.seleniumProject.pageObjects.login.LoginPage;
 import com.seleniumProject.utilities.XLUtils;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -10,7 +11,7 @@ import java.io.IOException;
 import static org.testng.Assert.assertTrue;
 import static org.testng.Assert.fail;
 
-public class TC_LoginDDT_002 extends BaseClass {
+public class TC_LoginDDT_002 extends BaseTest {
 
     @Test(dataProvider = "LoginData")
     public void loginDDT(String email, String password) throws IOException, InterruptedException {
