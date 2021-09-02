@@ -16,18 +16,25 @@ public class CalendarPage extends BaseTest {
 
     @FindBy(xpath = "//*[@aria-label='TimeLog']")
     private WebElement sideMenuCalendarBtn;
+
     @FindBy(xpath = "//*[@class='pc-today']")
     private WebElement todayDay;
+
     @FindBy(xpath = "//*[@id='project']")
     private WebElement projectsList;
+
     @FindBy(xpath = "//*[@class='md-select-menu-container md-active md-clickable']//*[contains(text(), 'My Advisor')]")
     private WebElement selectProject;
+
     @FindBy(id = "description")
     private WebElement setTimeLogDescription;
+
     @FindBy(xpath = "//*[@class='res-table-body']/div[2]/div[2]")
     private WebElement getTimeLogDescription;
+
     @FindBy(xpath = "//*[@aria-label='close']")
     private WebElement closeCreatedTimeLog;
+
     @FindBy(xpath = "//*[text()='Save']")
     private WebElement timeLogSaveBtn;
 

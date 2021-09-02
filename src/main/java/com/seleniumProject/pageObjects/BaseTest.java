@@ -70,6 +70,8 @@ public class BaseTest<T extends BaseTest<T>> extends PageObject {
         System.out.println("Screenshot taken");
     }
 
+
+
     public WebElementFacade waitFor(WebElement element) {
         try{
             return super.waitFor(element);

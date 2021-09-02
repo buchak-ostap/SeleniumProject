@@ -3,7 +3,7 @@ package com.seleniumProject.testCases;
 import com.seleniumProject.pageObjects.BaseTest;
 import com.seleniumProject.pageObjects.calendar.CalendarPage;
 import com.seleniumProject.pageObjects.login.LoginPage;
-import com.seleniumProject.steps.Calendar;
+import com.seleniumProject.steps.calendar.Calendar;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -28,7 +28,7 @@ public class TC_CreateTimeLog_003 extends BaseTest {
         loginPage.setPassword(password);
         loginPage.clickLogin();
 //        Thread.sleep(2000);
-//
+
         calendar.openCalendar();
 //        Thread.sleep(2000);
         createTimeLog.openTimeLogWindow();
