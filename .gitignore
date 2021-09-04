@@ -1,0 +1,6 @@
+/target/
+/.idea
+*.log
+/example.log.1
+/Screenshots/
+/test-output/
