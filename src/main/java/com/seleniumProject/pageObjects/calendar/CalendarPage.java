@@ -39,24 +39,28 @@ public class CalendarPage extends BaseTest {
     private WebElement timeLogSaveBtn;
 
     public void openCalendar() {
+        waitForPageLoad();
         waitFor(sideMenuCalendarBtn);
         clickOn(sideMenuCalendarBtn);
         waitForPageLoad();
     }
 
     public void openTimeLogWindow() {
+        waitForPageLoad();
         waitFor(todayDay);
         clickOn(todayDay);
         waitForPageLoad();
     }
 
     public void expandProjectsList() {
+        waitForPageLoad();
         waitFor(projectsList);
         clickOn(projectsList);
         waitForPageLoad();
     }
 
     public void selectProject() {
+        waitForPageLoad();
         waitFor(selectProject);
         clickOn(selectProject);
         waitForPageLoad();

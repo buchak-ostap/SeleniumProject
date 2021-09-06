@@ -22,7 +22,7 @@ public class TC_LoginDDT_002 extends BaseTest {
         loginPage.clickLogin();
         Thread.sleep(2000);
 
-        if (driver.getTitle().equals("Home")) {
+        if (getDriver().getTitle().equals("Home")) {
             assertTrue(true);
             logger.info("User logged in to the system");
         } else {

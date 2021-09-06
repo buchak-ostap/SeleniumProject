@@ -1,12 +1,12 @@
 package com.seleniumProject.pageObjects;
 
-import com.seleniumProject.env.Env;
-import lombok.extern.log4j.Log4j;
 import com.seleniumProject.utilities.ReadConfig;
 import com.seleniumProject.utilities.constants.JsScripts;
 import com.seleniumProject.utilities.constants.RegularExpressions;
+import lombok.extern.log4j.Log4j;
 import net.serenitybdd.core.pages.PageObject;
 import net.serenitybdd.core.pages.WebElementFacade;
+import net.thucydides.core.annotations.Managed;
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
@@ -38,6 +38,7 @@ public class BaseTest<T extends BaseTest<T>> extends PageObject {
     public String baseURL = readConfig.getSSBaseUrl();
     public String email = readConfig.getSSEmail();
     public String password = readConfig.getSSPassword();
+    @Managed()
     public static WebDriver driver;
     public static Logger logger;
 
@@ -54,7 +55,8 @@ public class BaseTest<T extends BaseTest<T>> extends PageObject {
             System.setProperty("webdriver.gecko.driver", readConfig.getFirefoxPath());
             driver = new FirefoxDriver();
         }
-        driver.get(baseURL);
+        this.setDriver(driver);
+        getDriver().get(baseURL);
     }
 
     @AfterClass
@@ -107,6 +109,7 @@ public class BaseTest<T extends BaseTest<T>> extends PageObject {
     }
 
     public FluentWait<WebDriver> doWait() {
+        this.setDriver(driver);
         return (new FluentWait<>(getDriver()))
                 .withTimeout(Duration.ofSeconds(15))
                 .pollingEvery(Duration.ofMillis(100))

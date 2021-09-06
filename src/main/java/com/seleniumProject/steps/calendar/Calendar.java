@@ -1,13 +1,14 @@
 package com.seleniumProject.steps.calendar;
 
+import com.seleniumProject.pageObjects.BaseTest;
 import com.seleniumProject.pageObjects.calendar.CalendarPage;
 import net.thucydides.core.annotations.Step;
 
-import static com.seleniumProject.pageObjects.BaseTest.driver;
 
-public class Calendar {
 
-    CalendarPage calendar = new CalendarPage(driver);
+public class Calendar extends BaseTest {
+
+    CalendarPage calendar = new CalendarPage(getDriver());
 
     @Step
     public void openCalendar() {
