@@ -38,38 +38,44 @@ public class CalendarPage extends BaseTest {
     @FindBy(xpath = "//*[text()='Save']")
     private WebElement timeLogSaveBtn;
 
+    @FindBy(className = "profile-avatar")
+    private WebElement profileIcon;
+
+    @FindBy(xpath = "//*[@class='n-u-m__menu']/md-menu-item[3]")
+    private WebElement logoutBtn;
+
     public void openCalendar() {
         waitForPageLoad();
-        waitFor(sideMenuCalendarBtn);
         clickOn(sideMenuCalendarBtn);
         waitForPageLoad();
     }
 
     public void openTimeLogWindow() {
-        waitForPageLoad();
         waitFor(todayDay);
         clickOn(todayDay);
         waitForPageLoad();
     }
 
     public void expandProjectsList() {
-        waitForPageLoad();
         waitFor(projectsList);
         clickOn(projectsList);
         waitForPageLoad();
     }
 
     public void selectProject() {
-        waitForPageLoad();
         waitFor(selectProject);
         clickOn(selectProject);
         waitForPageLoad();
     }
 
     public void enterDescription(String description) {
-//        setTimeLogDescription.sendKeys(description);
         typeSlowly(setTimeLogDescription, description);
         waitABit(TIMEOUT_M);
+    }
+
+    public void saveTimeLog() {
+        waitFor(timeLogSaveBtn);
+        clickOn(timeLogSaveBtn);
     }
 
     public String getTimeLogDescription() {
@@ -80,12 +86,5 @@ public class CalendarPage extends BaseTest {
     public void closeCreatedTimeLogWindow() {
         waitFor(closeCreatedTimeLog);
         clickOn(closeCreatedTimeLog);
-        waitForPageLoad();
     }
-
-    public void saveTimeLog() {
-        waitFor(timeLogSaveBtn);
-        clickOn(timeLogSaveBtn);
-    }
-
 }

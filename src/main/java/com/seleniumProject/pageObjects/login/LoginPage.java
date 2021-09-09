@@ -1,12 +1,15 @@
 package com.seleniumProject.pageObjects.login;
 
+import com.seleniumProject.pageObjects.BaseTest;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class LoginPage {
+import static com.seleniumProject.utilities.constants.Constants.TIMEOUT_M;
+
+public class LoginPage extends BaseTest {
 
     public LoginPage(WebDriver driver) {
         PageFactory.initElements(driver, this);
@@ -55,10 +58,12 @@ public class LoginPage {
     }
 
     public void clickProfileAvatar() {
-        profileIcon.click();
+        waitABit(TIMEOUT_M);
+        clickOn(profileIcon);
     }
 
     public void clickLogout() {
-        logoutBtn.click();
+        waitForPageLoad();
+        clickOn(logoutBtn);
     }
 }

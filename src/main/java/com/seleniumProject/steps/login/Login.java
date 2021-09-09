@@ -10,8 +10,8 @@ public class Login extends BaseTest {
 
     public static final String HOME_PAGE_TITLE = "Home";
 
-    LoginPage loginPage = new LoginPage(getDriver());
-    WebDriverWait wait = new WebDriverWait(getDriver(), 10);
+    LoginPage loginPage = new LoginPage(driver);
+    WebDriverWait wait = new WebDriverWait(driver, 10);
 
     @Step
     public void login() {

@@ -10,7 +10,7 @@
     <test name="Login Test">
         <parameter name="browser" value="chrome"/>
         <classes>
-<!--            <class name="com.seleniumProject.testCases.TC_LoginTest_001"/>-->
+            <class name="com.seleniumProject.testCases.TC_LoginTest_001"/>
 <!--            <class name="com.seleniumProject.testCases.TC_LoginDDT_002"/>-->
             <class name="com.seleniumProject.testCases.TC_CreateTimeLog_003"/>
         </classes>

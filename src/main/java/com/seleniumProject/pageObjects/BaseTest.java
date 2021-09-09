@@ -49,10 +49,10 @@ public class BaseTest<T extends BaseTest<T>> extends PageObject {
         PropertyConfigurator.configure("Log4j.properties");
 
         if (browser.equals("chrome")) {
-            System.setProperty("webdriver.chrome.driver", readConfig.getChromePath());
+            System.setProperty("webdriver.chrome.driver", "./src/test/resources/drivers/chromedriver");
             driver = new ChromeDriver();
         } else if (browser.equals("firefox")) {
-            System.setProperty("webdriver.gecko.driver", readConfig.getFirefoxPath());
+            System.setProperty("webdriver.gecko.driver", "./src/test/resources/drivers/geckodriver");
             driver = new FirefoxDriver();
         }
         this.setDriver(driver);
@@ -61,7 +61,7 @@ public class BaseTest<T extends BaseTest<T>> extends PageObject {
 
     @AfterClass
     public void tearDown() {
-        driver.quit();
+        getDriver().quit();
     }
 
     public void captureScreen(WebDriver driver, String name) throws IOException {
