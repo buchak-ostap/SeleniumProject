@@ -7,12 +7,14 @@
         <listener class-name="com.seleniumProject.utilities.Reporting"/>
     </listeners>
     
-    <test name="Login Test">
+    <test name="Functional">
         <parameter name="browser" value="chrome"/>
         <classes>
-            <class name="com.seleniumProject.testCases.TC_LoginTest_001"/>
-<!--            <class name="com.seleniumProject.testCases.TC_LoginDDT_002"/>-->
-            <class name="com.seleniumProject.testCases.TC_CreateTimeLog_003"/>
+            <class name="com.seleniumProject.testCases.functional.authentication.LoginLogoutTest"/>
+            <class name="com.seleniumProject.testCases.functional.calendar.CreateDefaultTimeLogTest"/>
+            <class name="com.seleniumProject.testCases.functional.contacts.ContactsRedirectsTest"/>
+            <class name="com.seleniumProject.testCases.functional.contacts.ContactsPaginationTest"/>
+            <class name="com.seleniumProject.testCases.functional.contacts.ContactsSearchTest"/>
         </classes>
     </test>
 </suite>

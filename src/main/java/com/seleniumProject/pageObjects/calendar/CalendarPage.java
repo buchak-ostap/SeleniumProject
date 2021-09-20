@@ -14,7 +14,7 @@ public class CalendarPage extends BaseTest {
         PageFactory.initElements(driver, this);
     }
 
-    @FindBy(xpath = "//*[@aria-label='TimeLog']")
+    @FindBy(xpath = "//*[@id='app']/ss-sidebar/div/div/div[1]/a[2]/span[1]/span")
     private WebElement sideMenuCalendarBtn;
 
     @FindBy(xpath = "//*[@class='pc-today']")
@@ -38,13 +38,7 @@ public class CalendarPage extends BaseTest {
     @FindBy(xpath = "//*[text()='Save']")
     private WebElement timeLogSaveBtn;
 
-    @FindBy(className = "profile-avatar")
-    private WebElement profileIcon;
-
-    @FindBy(xpath = "//*[@class='n-u-m__menu']/md-menu-item[3]")
-    private WebElement logoutBtn;
-
-    public void openCalendar() {
+    public void openCalendarPage() {
         waitForPageLoad();
         clickOn(sideMenuCalendarBtn);
         waitForPageLoad();

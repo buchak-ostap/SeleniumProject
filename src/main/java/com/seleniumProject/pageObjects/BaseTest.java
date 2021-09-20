@@ -1,5 +1,6 @@
 package com.seleniumProject.pageObjects;
 
+import com.seleniumProject.steps.login.Login;
 import com.seleniumProject.utilities.ReadConfig;
 import com.seleniumProject.utilities.constants.JsScripts;
 import com.seleniumProject.utilities.constants.RegularExpressions;
@@ -16,9 +17,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.FluentWait;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Parameters;
+import org.testng.annotations.*;
 
 import java.io.File;
 import java.io.IOException;
@@ -71,8 +70,6 @@ public class BaseTest<T extends BaseTest<T>> extends PageObject {
         FileUtils.copyFile(source, target);
         System.out.println("Screenshot taken");
     }
-
-
 
     public WebElementFacade waitFor(WebElement element) {
         try{

@@ -3,31 +3,26 @@ package com.seleniumProject.steps.login;
 import com.seleniumProject.pageObjects.BaseTest;
 import com.seleniumProject.pageObjects.login.LoginPage;
 import net.thucydides.core.annotations.Step;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
+
+import static com.seleniumProject.utilities.constants.Constants.*;
 
 public class Login extends BaseTest {
 
-    public static final String HOME_PAGE_TITLE = "Home";
-
     LoginPage loginPage = new LoginPage(driver);
-    WebDriverWait wait = new WebDriverWait(driver, 10);
 
     @Step
-    public void login() {
-        wait.until(ExpectedConditions.presenceOfElementLocated(loginPage.getEmailIdentifier()));
-
-        loginPage.setEmail(email);
-        loginPage.setPassword(password);
+    public void loginToTheSystem() {
+        loginPage.enterEmail(email);
+        loginPage.enterPassword(password);
         loginPage.clickLogin();
-        wait.until(ExpectedConditions.titleIs(HOME_PAGE_TITLE));
+        waitABit(TIMEOUT_M);
+        Assert.assertEquals(loginPage.getTitle(), HOME_PAGE_TITLE, "Title is different");
     }
 
     @Step
-    public void logout() {
-        wait.until(ExpectedConditions.elementToBeClickable(loginPage.getProfileIconIdentifier()));
+    public void logoutFromTheSystem() {
         loginPage.clickProfileAvatar();
-        wait.until(ExpectedConditions.elementToBeClickable(loginPage.getLogoutBtnIdentifier()));
         loginPage.clickLogout();
     }
 }

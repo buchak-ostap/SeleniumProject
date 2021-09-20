@@ -12,8 +12,8 @@ public class Calendar extends BaseTest {
     CalendarPage calendar = new CalendarPage(driver);
 
     @Step
-    public void openCalendar() {
-        calendar.openCalendar();
+    public void openCalendarPage() {
+        calendar.openCalendarPage();
     }
 
     @Step

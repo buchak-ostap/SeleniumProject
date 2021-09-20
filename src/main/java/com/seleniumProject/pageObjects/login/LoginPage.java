@@ -1,7 +1,6 @@
 package com.seleniumProject.pageObjects.login;
 
 import com.seleniumProject.pageObjects.BaseTest;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -15,46 +14,32 @@ public class LoginPage extends BaseTest {
         PageFactory.initElements(driver, this);
     }
 
-    @FindBy(id = "email")
+    @FindBy(xpath = "//*[@type='email']")
     private WebElement email;
-    private By emailIdentifier = By.id("email");
 
-    @FindBy(id = "password")
+    @FindBy(xpath = "//*[@type='password']")
     private WebElement password;
 
-    @FindBy(xpath = "//*[text()='login']")
+    @FindBy(xpath = "//*[text()='LOGIN']")
     private WebElement loginBtn;
 
     @FindBy(className = "profile-avatar")
     private WebElement profileIcon;
-    private By profileIconIdentifier = By.className("profile-avatar");
 
-    @FindBy(xpath = "//*[@class='n-u-m__menu']/md-menu-item[3]")
+    @FindBy(xpath = "//*[contains(text(),'Logout')]")
     private WebElement logoutBtn;
-    private By logoutBtnIdentifier = By.xpath("//*[@class='n-u-m__menu']/md-menu-item[3]");
 
-    public By getEmailIdentifier() {
-        return emailIdentifier;
+    public void enterEmail(String usersEmail) {
+        waitForPageLoad();
+        typeSlowly(email, usersEmail);
     }
 
-    public By getProfileIconIdentifier() {
-        return profileIconIdentifier;
-    }
-
-    public By getLogoutBtnIdentifier() {
-        return logoutBtnIdentifier;
-    }
-
-    public void setEmail(String userEmail) {
-        email.sendKeys(userEmail);
-    }
-
-    public void setPassword(String userPass) {
-        password.sendKeys(userPass);
+    public void enterPassword(String usersPassword) {
+        typeSlowly(password, usersPassword);
     }
 
     public void clickLogin() {
-        loginBtn.click();
+        clickOn(loginBtn);
     }
 
     public void clickProfileAvatar() {
@@ -63,7 +48,7 @@ public class LoginPage extends BaseTest {
     }
 
     public void clickLogout() {
-        waitForPageLoad();
+        waitFor(logoutBtn);
         clickOn(logoutBtn);
     }
 }
