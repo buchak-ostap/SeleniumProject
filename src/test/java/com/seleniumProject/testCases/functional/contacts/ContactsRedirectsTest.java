@@ -23,9 +23,4 @@ public class ContactsRedirectsTest extends BaseTest {
         contacts.searchInContacts(SEARCH_USER);
         contacts.openProfilePage();
     }
-
-    @AfterMethod
-    public void logoutFromTheSystem() {
-        login.logoutFromTheSystem();
-    }
 }

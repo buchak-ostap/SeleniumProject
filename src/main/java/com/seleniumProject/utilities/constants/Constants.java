@@ -15,6 +15,7 @@ public class Constants {
 
     //Calendar page constants
     public static final String TIME_LOG_DESCRIPTION = "Work on PHN projects, test finished tickets, create automation tests";
+    public static final String REQUEST_LOG_DESCRIPTION = "Going to vacation";
 
     //Page titles
     public static final String HOME_PAGE_TITLE = "Home";

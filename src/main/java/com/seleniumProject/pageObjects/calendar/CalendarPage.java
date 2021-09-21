@@ -1,6 +1,7 @@
 package com.seleniumProject.pageObjects.calendar;
 
 import com.seleniumProject.pageObjects.BaseTest;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -26,17 +27,36 @@ public class CalendarPage extends BaseTest {
     @FindBy(xpath = "//*[@class='md-select-menu-container md-active md-clickable']//*[contains(text(), 'My Advisor')]")
     private WebElement selectProject;
 
-    @FindBy(id = "description")
-    private WebElement setTimeLogDescription;
+    @FindBy(xpath = "//*[@id='description']")
+    private WebElement timeLogDescription;
+
+    @FindBy(xpath = "//*[starts-with(@id, 'input_')]")
+    private WebElement requestDescription;
 
     @FindBy(xpath = "//*[@class='res-table-body']/div[2]/div[2]")
     private WebElement getTimeLogDescription;
 
     @FindBy(xpath = "//*[@aria-label='close']")
-    private WebElement closeCreatedTimeLog;
+    private WebElement closeTimeLogOrRequestWindow;
 
     @FindBy(xpath = "//*[text()='Save']")
-    private WebElement timeLogSaveBtn;
+    private WebElement timeLogOrRequestSaveBtn;
+
+    @FindBy(xpath = "//*[@for='color-2']")
+    private WebElement vacationRadioBtn;
+
+
+    public void selectDay(int day) {
+        waitForPageLoad();
+        WebElement dayBox = driver.findElement(By.xpath("//*[@class='day-container layout-column flex' and @tabindex='" + day + "']"));
+        clickOn(dayBox);
+        waitForPageLoad();
+    }
+
+    public void selectVacationRequest() {
+        waitFor(vacationRadioBtn);
+        clickOn(vacationRadioBtn);
+    }
 
     public void openCalendarPage() {
         waitForPageLoad();
@@ -62,14 +82,20 @@ public class CalendarPage extends BaseTest {
         waitForPageLoad();
     }
 
-    public void enterDescription(String description) {
-        typeSlowly(setTimeLogDescription, description);
+    public void enterTimeLogDescription(String description) {
+        typeSlowly(timeLogDescription, description);
         waitABit(TIMEOUT_M);
     }
 
-    public void saveTimeLog() {
-        waitFor(timeLogSaveBtn);
-        clickOn(timeLogSaveBtn);
+    public void enterRequestDescription(String description) {
+        clickOn(requestDescription);
+        typeSlowly(requestDescription, description);
+        waitABit(TIMEOUT_M);
+    }
+
+    public void saveTimeLogOrRequest() {
+        waitFor(timeLogOrRequestSaveBtn);
+        clickOn(timeLogOrRequestSaveBtn);
     }
 
     public String getTimeLogDescription() {
@@ -77,8 +103,8 @@ public class CalendarPage extends BaseTest {
         return getTimeLogDescription.getText();
     }
 
-    public void closeCreatedTimeLogWindow() {
-        waitFor(closeCreatedTimeLog);
-        clickOn(closeCreatedTimeLog);
+    public void closeTimeLogOrRequestWindow() {
+        waitFor(closeTimeLogOrRequestWindow);
+        clickOn(closeTimeLogOrRequestWindow);
     }
 }

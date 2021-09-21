@@ -3,7 +3,6 @@ package com.seleniumProject.testCases.functional.contacts;
 import com.seleniumProject.pageObjects.BaseTest;
 import com.seleniumProject.steps.contacts.Contacts;
 import com.seleniumProject.steps.login.Login;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -27,10 +26,5 @@ public class ContactsPaginationTest extends BaseTest {
         assertEquals(contacts.changeNumberOfUsersPerPage(TEN_USERS), TEN_USERS);
         assertEquals(contacts.changeNumberOfUsersPerPage(TWENTY_FIVE_USERS), TWENTY_FIVE_USERS);
         assertEquals(contacts.changeNumberOfUsersPerPage(FIFTY_USERS), FIFTY_USERS);
-    }
-
-    @AfterMethod
-    public void logoutFromTheSystem() {
-        login.logoutFromTheSystem();
     }
 }

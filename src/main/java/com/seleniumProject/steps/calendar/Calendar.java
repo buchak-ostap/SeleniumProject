@@ -17,12 +17,17 @@ public class Calendar extends BaseTest {
     }
 
     @Step
+    public void selectAnyDay(int day) {
+        calendar.selectDay(day);
+    }
+
+    @Step
     public void saveCurrentDayDefaultTimeLog(String description) {
         calendar.openTimeLogWindow();
         calendar.expandProjectsList();
         calendar.selectProject();
-        calendar.enterDescription(description);
-        calendar.saveTimeLog();
+        calendar.enterTimeLogDescription(description);
+        calendar.saveTimeLogOrRequest();
     }
 
     @Step
@@ -30,6 +35,23 @@ public class Calendar extends BaseTest {
         calendar.openTimeLogWindow();
         String actual = calendar.getTimeLogDescription();
         assertEquals(actual, timeLogDescription, "Time Log description is different");
-        calendar.closeCreatedTimeLogWindow();
+        calendar.closeTimeLogOrRequestWindow();
+    }
+
+    @Step
+    public void enterRequestDescription(String description) {
+        calendar.enterRequestDescription(description);
+        //TODO need to change to submit
+        calendar.closeTimeLogOrRequestWindow();
+    }
+
+    @Step
+    public void selectVacationRequest() {
+        calendar.selectVacationRequest();
+    }
+
+    @Step
+    public void closeTimeLogOrRequestWindow() {
+        calendar.closeTimeLogOrRequestWindow();
     }
 }
