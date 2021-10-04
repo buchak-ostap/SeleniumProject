@@ -9,6 +9,9 @@ import org.openqa.selenium.support.PageFactory;
 
 import java.util.List;
 
+import static com.seleniumProject.util.constants.Constants.TIMEOUT_L;
+import static com.seleniumProject.util.constants.Constants.TIMEOUT_M;
+
 public class ContactsPage extends BaseTest {
 
     public ContactsPage(WebDriver driver) {
@@ -46,12 +49,13 @@ public class ContactsPage extends BaseTest {
         waitForPageLoad();
         clickOn(sideMenuContactsBtn);
         waitForPageLoad();
+        waitABit(TIMEOUT_M);
     }
 
     public void searchInContacts(String text) {
         clickOn(searchField);
         typeSlowly(searchField, text);
-        waitForPageLoad();
+        waitABit(TIMEOUT_L);
     }
 
     public void expandPaginationDropDown() {

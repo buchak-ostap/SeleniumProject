@@ -1,9 +1,8 @@
 package com.seleniumProject.pageObjects;
 
-import com.seleniumProject.steps.login.Login;
-import com.seleniumProject.utilities.ReadConfig;
-import com.seleniumProject.utilities.constants.JsScripts;
-import com.seleniumProject.utilities.constants.RegularExpressions;
+import com.seleniumProject.util.ReadConfig;
+import com.seleniumProject.util.constants.JsScripts;
+import com.seleniumProject.util.constants.RegularExpressions;
 import lombok.extern.log4j.Log4j;
 import net.serenitybdd.core.pages.PageObject;
 import net.serenitybdd.core.pages.WebElementFacade;
@@ -27,7 +26,7 @@ import java.util.List;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
-import static com.seleniumProject.utilities.constants.Constants.TIMEOUT_S;
+import static com.seleniumProject.util.constants.Constants.TIMEOUT_S;
 
 @Log4j()
 public class BaseTest<T extends BaseTest<T>> extends PageObject {

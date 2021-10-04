@@ -1,4 +1,4 @@
-package com.seleniumProject.utilities;
+package com.seleniumProject.util;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;

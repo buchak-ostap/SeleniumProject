@@ -6,7 +6,7 @@ import com.seleniumProject.steps.login.Login;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import static com.seleniumProject.utilities.constants.Constants.SEARCH_USER;
+import static com.seleniumProject.util.constants.Constants.SEARCH_USER;
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
@@ -17,7 +17,7 @@ public class ContactsSearchTest extends BaseTest {
 
     @BeforeMethod
     public void loginToTheSystem() {
-        login.loginToTheSystem();
+        login.loginToTheSystem(email, password);
     }
 
     @Test

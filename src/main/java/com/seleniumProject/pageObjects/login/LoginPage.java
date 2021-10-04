@@ -6,7 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import static com.seleniumProject.utilities.constants.Constants.TIMEOUT_M;
+import static com.seleniumProject.util.constants.Constants.TIMEOUT_M;
 
 public class LoginPage extends BaseTest {
 

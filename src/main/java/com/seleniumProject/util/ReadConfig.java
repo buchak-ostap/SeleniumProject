@@ -1,4 +1,4 @@
-package com.seleniumProject.utilities;
+package com.seleniumProject.util;
 
 import java.io.File;
 import java.io.FileInputStream;

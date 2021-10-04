@@ -7,7 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import static com.seleniumProject.utilities.constants.Constants.TIMEOUT_M;
+import static com.seleniumProject.util.constants.Constants.TIMEOUT_M;
 
 public class CalendarPage extends BaseTest {
 
@@ -15,7 +15,7 @@ public class CalendarPage extends BaseTest {
         PageFactory.initElements(driver, this);
     }
 
-    @FindBy(xpath = "//*[@id='app']/ss-sidebar/div/div/div[1]/a[2]/span[1]/span")
+    @FindBy(xpath = "//*[text()='Calendar']")
     private WebElement sideMenuCalendarBtn;
 
     @FindBy(xpath = "//*[@class='pc-today']")

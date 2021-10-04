@@ -5,7 +5,7 @@ import com.seleniumProject.pageObjects.contacts.ContactsPage;
 import net.thucydides.core.annotations.Step;
 import org.testng.Assert;
 
-import static com.seleniumProject.utilities.constants.Constants.*;
+import static com.seleniumProject.util.constants.Constants.*;
 
 public class Contacts extends BaseTest {
 

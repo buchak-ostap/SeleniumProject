@@ -6,7 +6,7 @@ import com.seleniumProject.steps.login.Login;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import static com.seleniumProject.utilities.constants.Constants.TIME_LOG_DESCRIPTION;
+import static com.seleniumProject.util.constants.Constants.TIME_LOG_DESCRIPTION;
 
 
 public class CreateDefaultTimeLogTest extends BaseTest {
@@ -16,7 +16,7 @@ public class CreateDefaultTimeLogTest extends BaseTest {
 
     @BeforeMethod
     public void loginToTheSystem() {
-        login.loginToTheSystem();
+        login.loginToTheSystem(email, password);
     }
 
     @Test

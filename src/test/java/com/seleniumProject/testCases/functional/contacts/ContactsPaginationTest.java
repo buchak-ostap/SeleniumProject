@@ -6,8 +6,8 @@ import com.seleniumProject.steps.login.Login;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import static com.seleniumProject.utilities.constants.Constants.*;
-import static com.seleniumProject.utilities.constants.Constants.FIFTY_USERS;
+import static com.seleniumProject.util.constants.Constants.*;
+import static com.seleniumProject.util.constants.Constants.FIFTY_USERS;
 import static org.testng.Assert.assertEquals;
 
 public class ContactsPaginationTest extends BaseTest {
@@ -17,7 +17,7 @@ public class ContactsPaginationTest extends BaseTest {
 
     @BeforeMethod
     public void loginToTheSystem() {
-        login.loginToTheSystem();
+        login.loginToTheSystem(email, password);
     }
 
     @Test

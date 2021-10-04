@@ -4,18 +4,18 @@
 <suite name="SS">
     
     <listeners>
-        <listener class-name="com.seleniumProject.utilities.Reporting"/>
+        <listener class-name="com.seleniumProject.util.Reporting"/>
     </listeners>
     
     <test name="Functional">
         <parameter name="browser" value="chrome"/>
         <classes>
-<!--            <class name="com.seleniumProject.testCases.functional.authentication.LoginLogoutTest"/>-->
-<!--            <class name="com.seleniumProject.testCases.functional.calendar.CreateDefaultTimeLogTest"/>-->
+            <class name="com.seleniumProject.testCases.functional.authentication.LoginLogoutTest"/>
+            <class name="com.seleniumProject.testCases.functional.calendar.CreateDefaultTimeLogTest"/>
             <class name="com.seleniumProject.testCases.functional.calendar.CreateVacationRequest"/>
-<!--            <class name="com.seleniumProject.testCases.functional.contacts.ContactsRedirectsTest"/>-->
-<!--            <class name="com.seleniumProject.testCases.functional.contacts.ContactsPaginationTest"/>-->
-<!--            <class name="com.seleniumProject.testCases.functional.contacts.ContactsSearchTest"/>-->
+            <class name="com.seleniumProject.testCases.functional.contacts.ContactsRedirectsTest"/>
+            <class name="com.seleniumProject.testCases.functional.contacts.ContactsPaginationTest"/>
+            <class name="com.seleniumProject.testCases.functional.contacts.ContactsSearchTest"/>
         </classes>
     </test>
 </suite>

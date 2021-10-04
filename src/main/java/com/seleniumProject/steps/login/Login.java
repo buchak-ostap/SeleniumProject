@@ -5,14 +5,14 @@ import com.seleniumProject.pageObjects.login.LoginPage;
 import net.thucydides.core.annotations.Step;
 import org.testng.Assert;
 
-import static com.seleniumProject.utilities.constants.Constants.*;
+import static com.seleniumProject.util.constants.Constants.*;
 
 public class Login extends BaseTest {
 
     LoginPage loginPage = new LoginPage(driver);
 
     @Step
-    public void loginToTheSystem() {
+    public void loginToTheSystem(String email, String password) {
         loginPage.enterEmail(email);
         loginPage.enterPassword(password);
         loginPage.clickLogin();

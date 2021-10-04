@@ -1,4 +1,4 @@
-package com.seleniumProject.utilities;
+package com.seleniumProject.util;
 
 import org.apache.poi.ss.usermodel.DataFormatter;
 import org.apache.poi.xssf.usermodel.XSSFCell;

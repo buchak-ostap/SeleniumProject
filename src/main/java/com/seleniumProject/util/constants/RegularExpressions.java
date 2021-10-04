@@ -1,4 +1,4 @@
-package com.seleniumProject.utilities.constants;
+package com.seleniumProject.util.constants;
 
 import lombok.extern.log4j.Log4j;
 

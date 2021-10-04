@@ -5,7 +5,7 @@ import com.seleniumProject.steps.contacts.Contacts;
 import com.seleniumProject.steps.login.Login;
 import org.testng.annotations.*;
 
-import static com.seleniumProject.utilities.constants.Constants.*;
+import static com.seleniumProject.util.constants.Constants.*;
 
 public class ContactsRedirectsTest extends BaseTest {
 
@@ -14,7 +14,7 @@ public class ContactsRedirectsTest extends BaseTest {
 
     @BeforeMethod
     public void loginToTheSystem() {
-        login.loginToTheSystem();
+        login.loginToTheSystem(email, password);
     }
 
     @Test

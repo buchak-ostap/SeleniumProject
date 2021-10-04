@@ -2,5 +2,5 @@
 /.idea
 *.log
 /example.log.1
-/Screenshots/
-/test-output/
+#/Screenshots/
+#/test-output/
