@@ -45,6 +45,11 @@ public class CalendarPage extends BaseTest {
     @FindBy(xpath = "//*[@for='color-2']")
     private WebElement vacationRadioBtn;
 
+    @FindBy(xpath = "//*[@aria-label='delete']")
+    private WebElement deleteTimeLogBtn;
+
+    @FindBy(xpath = "//*[text()='delete']")
+    private WebElement confirmDeleteTimeLogBtn;
 
     public void selectDay(int day) {
         waitForPageLoad();
@@ -106,5 +111,15 @@ public class CalendarPage extends BaseTest {
     public void closeTimeLogOrRequestWindow() {
         waitFor(closeTimeLogOrRequestWindow);
         clickOn(closeTimeLogOrRequestWindow);
+    }
+
+    public void clickOnDeleteTimeLogButton() {
+        waitFor(deleteTimeLogBtn);
+        clickOn(deleteTimeLogBtn);
+    }
+
+    public void confirmDeleteTimeLogBtn() {
+        waitFor(confirmDeleteTimeLogBtn);
+        clickOn(confirmDeleteTimeLogBtn);
     }
 }

@@ -22,6 +22,8 @@ public class Constants {
     public static final String HOME_PAGE_TITLE = "Home";
     public static final String CONTACTS_PAGE_TITLE = "Contacts";
     public static final String CONTACT_PAGE_TITLE = "Contact";
+    public static final String CALENDAR_PAGE_TITLE = "Calendar";
+    public static final String PROJECTS_PAGE_TITLE = "Projects";
 
     //Invalid Login data
     public static final String INVALID_EMAIL = "test@sombrainc.com";

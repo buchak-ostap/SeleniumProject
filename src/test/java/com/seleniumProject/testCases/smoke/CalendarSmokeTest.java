@@ -1,4 +1,4 @@
-package com.seleniumProject.testCases.functional.calendar;
+package com.seleniumProject.testCases.smoke;
 
 import com.seleniumProject.pageObjects.BaseTest;
 import com.seleniumProject.steps.calendar.Calendar;
@@ -6,10 +6,7 @@ import com.seleniumProject.steps.login.Login;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import static com.seleniumProject.util.constants.Constants.TIME_LOG_DESCRIPTION;
-
-
-public class CreateDefaultTimeLogTest extends BaseTest {
+public class CalendarSmokeTest extends BaseTest {
 
     Login login = new Login();
     Calendar calendar = new Calendar();
@@ -20,10 +17,7 @@ public class CreateDefaultTimeLogTest extends BaseTest {
     }
 
     @Test
-    public void createTimeLog() {
+    public void calendarSmokeTest() {
         calendar.openCalendarPage();
-        calendar.saveCurrentDayDefaultTimeLog(TIME_LOG_DESCRIPTION);
-        calendar.verifyCurrentDayDefaultTimeLogCreation(TIME_LOG_DESCRIPTION);
-        calendar.deleteSingleTimeLog();
     }
 }

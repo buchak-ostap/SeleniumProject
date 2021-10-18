@@ -4,10 +4,19 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="10977976-9596-4b93-b931-7e411c840fe7" name="Default Changelist" comment="AQA - tests refactoring">
+    <list default="true" id="10977976-9596-4b93-b931-7e411c840fe7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/seleniumProject/pageObjects/projects/ProjectsPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/seleniumProject/steps/projects/Projects.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/seleniumProject/testCases/smoke/CalendarSmokeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/seleniumProject/testCases/smoke/ContactsSmokeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/seleniumProject/testCases/smoke/LoginSmokeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/seleniumProject/testCases/smoke/ProjectsSmokeTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TestNG.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TestNG.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/META-INF/MyJavaProject.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/seleniumProject/pageObjects/calendar/CalendarPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/seleniumProject/pageObjects/calendar/CalendarPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/seleniumProject/steps/calendar/Calendar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/seleniumProject/steps/calendar/Calendar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/seleniumProject/util/constants/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/seleniumProject/util/constants/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/seleniumProject/testCases/functional/calendar/CreateDefaultTimeLogTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/seleniumProject/testCases/functional/calendar/CreateDefaultTimeLogTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -161,7 +170,7 @@
       <workItem from="1631267020381" duration="1915000" />
       <workItem from="1633379693198" duration="768000" />
       <workItem from="1634281125472" duration="257000" />
-      <workItem from="1634465453425" duration="2576000" />
+      <workItem from="1634465453425" duration="7516000" />
     </task>
     <task id="LOCAL-00001" summary="AQA - tests refactoring">
       <created>1631219040501</created>
@@ -177,7 +186,14 @@
       <option name="project" value="LOCAL" />
       <updated>1633379859792</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="AQA - Organise tests by suits">
+      <created>1634586645176</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1634586645176</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -186,7 +202,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="AQA - tests refactoring" />
     <MESSAGE value="AQA - 666" />
-    <option name="LAST_COMMIT_MESSAGE" value="AQA - 666" />
+    <MESSAGE value="AQA - Organise tests by suits" />
+    <option name="LAST_COMMIT_MESSAGE" value="AQA - Organise tests by suits" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -200,6 +217,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/seleniumProject/steps/login/Login.java</url>
           <line>25</line>
           <option name="timeStamp" value="52" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/seleniumProject/steps/projects/Projects.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="54" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -11,7 +11,10 @@
         <parameter name="browser" value="chrome"/>
         <classes>
             <class name="com.seleniumProject.testCases.functional.authentication.LoginLogoutTest"/>
-            <class name="com.seleniumProject.testCases.functional.calendar.CreateDefaultTimeLogTest"/>
+            <class name="com.seleniumProject.testCases.smoke.LoginSmokeTest"/>
+            <class name="com.seleniumProject.testCases.smoke.ContactsSmokeTest"/>
+            <class name="com.seleniumProject.testCases.smoke.CalendarSmokeTest"/>
+            <class name="com.seleniumProject.testCases.smoke.ProjectsSmokeTest"/>
         </classes>
     </test>
     

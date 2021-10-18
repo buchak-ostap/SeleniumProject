@@ -3,7 +3,9 @@ package com.seleniumProject.steps.calendar;
 import com.seleniumProject.pageObjects.BaseTest;
 import com.seleniumProject.pageObjects.calendar.CalendarPage;
 import net.thucydides.core.annotations.Step;
+import org.testng.Assert;
 
+import static com.seleniumProject.util.constants.Constants.CALENDAR_PAGE_TITLE;
 import static org.testng.Assert.assertEquals;
 
 
@@ -14,6 +16,7 @@ public class Calendar extends BaseTest {
     @Step
     public void openCalendarPage() {
         calendar.openCalendarPage();
+        Assert.assertEquals(calendar.getTitle(), CALENDAR_PAGE_TITLE, "Title is different");
     }
 
     @Step
@@ -35,6 +38,10 @@ public class Calendar extends BaseTest {
         calendar.openTimeLogWindow();
         String actual = calendar.getTimeLogDescription();
         assertEquals(actual, timeLogDescription, "Time Log description is different");
+    }
+
+    @Step
+    public void closeTimeLogWindow() {
         calendar.closeTimeLogOrRequestWindow();
     }
 
@@ -53,5 +60,11 @@ public class Calendar extends BaseTest {
     @Step
     public void closeTimeLogOrRequestWindow() {
         calendar.closeTimeLogOrRequestWindow();
+    }
+
+    @Step
+    public void deleteSingleTimeLog() {
+        calendar.clickOnDeleteTimeLogButton();
+        calendar.confirmDeleteTimeLogBtn();
     }
 }
